@@ -30,7 +30,7 @@ my_reverse::my_reverse()
 }
 my_reverse::~my_reverse()
 {
-  delete[] _input;
+  delete _input;
   delete after_reverse;
   delete sum_string;
   delete sum_reverse;
