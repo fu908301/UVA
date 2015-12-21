@@ -6,6 +6,7 @@ using namespace std;
 class my_reverse{
   public:
     my_reverse();
+    ~my_reverse();
     void input();
     void input_reverse();
     bool string_the_same();
@@ -26,6 +27,13 @@ my_reverse::my_reverse()
   times = 0;
   sum = 0;
   int_sum_reverse = 0;
+}
+my_reverse::~my_reverse()
+{
+  delete[] _input;
+  delete after_reverse;
+  delete sum_string;
+  delete sum_reverse;
 }
 void my_reverse::input()
 {
