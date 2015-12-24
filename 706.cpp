@@ -4,6 +4,7 @@ using namespace std;
 class LCD{
   public:
     LCD();
+    ~LCD();
     void input_length();
     void input_number();
     void first_row();
@@ -20,6 +21,10 @@ LCD::LCD()
 {
   _input = new char [10];
   _length = -1;
+}
+LCD::~LCD()
+{
+  delete _input;
 }
 void LCD::input_length()
 {
